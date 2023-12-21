@@ -5,7 +5,7 @@ const app = express()
 app.use(express.json())
 
 // Setup port
-const PORT = process.env.PORT || 3222
+const PORT = process.env.PORT || 80
 
 app.listen(PORT, () => {
     console.log("Server listening on PORT:", PORT)
