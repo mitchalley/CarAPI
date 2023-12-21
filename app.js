@@ -75,7 +75,7 @@ app.get('/gas', async (request, response) => {
       await client.on('ready', async () => {
         const vehicle = client.getVehicle("KMHLM4AJ8NU031640");
         const status = await vehicle.status();
-        const fuelResponse = 'You car\'s fuel tank is ' + status.fuelLevel + ' percent full.';
+        const fuelResponse = 'Your car\'s fuel tank is ' + status.fuelLevel + ' percent full.';
         response.send(fuelResponse);
       });
     } catch (error) {
